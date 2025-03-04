@@ -333,6 +333,10 @@ input, select, textarea {
 
 /* Row */
 
+	.column{
+		flex: 50%;
+	}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
