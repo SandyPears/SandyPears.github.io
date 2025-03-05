@@ -85,8 +85,7 @@ input, select, textarea {
 	width: 90%;
 	background-color: lightgray;
 	margin-right: 2px;
-	margin: auto;
-	height: 8px;
+	height: 5px;
 
 	&:first-child {
 		border-top-left-radius: 3px;
