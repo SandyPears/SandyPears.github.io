@@ -82,10 +82,11 @@ input, select, textarea {
 }
 
 .item {
+	align-content: center;
 	width: 90%;
 	background-color: lightgray;
 	margin-right: 2px;
-	height: 5px;
+	height: 8px;
 
 	&:first-child {
 		border-top-left-radius: 3px;
