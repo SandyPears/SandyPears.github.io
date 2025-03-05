@@ -82,9 +82,10 @@ input, select, textarea {
 }
 
 .item {
-width: 100%;
+	width: 90%;
 	background-color: lightgray;
 	margin-right: 2px;
+	margin: auto;
 	height: 8px;
 
 	&:first-child {
