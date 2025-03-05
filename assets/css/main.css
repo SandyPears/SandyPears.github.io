@@ -82,7 +82,7 @@ input, select, textarea {
 }
 
 .item {
-	align-content: center;
+	justify-content: center;
 	width: 90%;
 	background-color: lightgray;
 	margin-right: 2px;
