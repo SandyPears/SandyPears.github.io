@@ -79,6 +79,7 @@ input, select, textarea {
 
 .progress-segment {
 	display: flex;
+	margin-bottom: 1em;
 }
 
 .item {
