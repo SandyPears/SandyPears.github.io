@@ -376,7 +376,7 @@ width: 100%;
 
 	.column{
 		flex: 33%;
-		align-items: left;
+		align-items: center;
 	}
 
 	.row {
