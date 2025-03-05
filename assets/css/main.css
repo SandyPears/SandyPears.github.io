@@ -375,7 +375,7 @@ width: 100%;
 /* Row */
 
 	.column{
-		flex: 20%;
+		flex: 100%;
 	}
 
 	.row {
