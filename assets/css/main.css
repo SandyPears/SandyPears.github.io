@@ -378,8 +378,8 @@ input, select, textarea {
 		flex: 33%;
 		align-items: center;
 		&.outline{
-			border-style: solid;
-			border-color: rgba(255, 255, 255, 0.35);
+			border-style: solid !important;
+			border-color: rgba(255, 255, 255, 0.35) !important;
 		}
 	}
 
