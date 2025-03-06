@@ -377,6 +377,10 @@ input, select, textarea {
 	.column{
 		flex: 33%;
 		align-items: center;
+		&.outline{
+			border-style: solid;
+			border-color: rgba(255, 255, 255, 0.35);
+		}
 	}
 
 	.row {
