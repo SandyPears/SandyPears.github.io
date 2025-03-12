@@ -2721,6 +2721,12 @@ input, select, textarea {
 
 /* Section/Article */
 
+	section.other, article.other {
+		text-align: center;
+		vertical-align: text-top;
+		padding: 0px;
+	}
+
 	section.special, article.special {
 		text-align: center;
 	}
