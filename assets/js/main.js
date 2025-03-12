@@ -130,7 +130,6 @@
 			}
 		}
 	});
-	
 
 	// Scrolly.
 		$('.scrolly').scrolly({

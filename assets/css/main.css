@@ -372,6 +372,8 @@ input, select, textarea {
 		border-bottom-color: rgba(255, 255, 255, 0.35);
 	}
 
+/* Text Fade-In */
+
 		.tag {
 			opacity: 0;
 			transform: translate(0, 10vh);
@@ -385,6 +387,26 @@ input, select, textarea {
 		.tag1 {
 			opacity: 0; /* Start hidden */
 			transition: opacity 3s ease 0.5s; /* 3s fade-in with a 0.5s delay */
+		}
+/* Slideshow*/
+		.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+		}
+
+		.mySlides {
+			display: none;
+		}
+
+		.fade {
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+			from {opacity: .4;}
+			to {opacity: 1;}
 		}
 /* Row */
 
