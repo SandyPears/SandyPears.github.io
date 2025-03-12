@@ -20,11 +20,11 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
+		$(window).on('load', function() {
+			setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+				$('.tag1').css('opacity', '1'); // Ensures the transition occurs
+			}, 500); // Adjust timing to avoid conflicts
 		});
 
 	// Nav.
@@ -130,6 +130,7 @@
 			}
 		}
 	});
+	
 
 	// Scrolly.
 		$('.scrolly').scrolly({
