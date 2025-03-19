@@ -3303,99 +3303,130 @@ input, select, textarea {
 			transform: scale(0.8) rotate(-30deg);
 		}
 
-	/* Nav */
+/* Nav */
 
 	#nav {
-		position: fixed;
-		/* Keeps it separate from the body background */
-		top: 20px;
-		/* Adds some space from the top */
-		left: 50%;
-		transform: translateX(-50%);
-		/* Centers it */
-		width: 50em;
-		/* Adjust width as needed */
-		max-width: 80%;
-		/* Ensures responsiveness */
-		background-color: #f7f7f7;
+		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		background-color: #ffffff;
 		color: #636363;
+		position: absolute;
+		width: 64em;
+		max-width: calc(100% - 4em);
 		padding: 1em;
+		background-color: #f7f7f7;
 		border-radius: 12px;
-		/* Rounded corners */
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-		/* Adds a subtle shadow for separation */
 		cursor: default;
 		text-align: center;
-		-moz-transition: background-color 0.2s ease, border-radius 0.2s ease, padding 0.2s ease;
-		-webkit-transition: background-color 0.2s ease, border-radius 0.2s ease, padding 0.2s ease;
-		-ms-transition: background-color 0.2s ease, border-radius 0.2s ease, padding 0.2s ease;
-		transition: background-color 0.2s ease, border-radius 0.2s ease, padding 0.2s ease;
 	}
 
-	/* Adjust the navbar in its alternative (scrolled) state */
-	#nav.alt {
-		position: fixed;
-		top: 20px;
-		left: 50%;
-		transform: translateX(-50%);
-		padding: 0.5em 1em;
-		background-color: rgba(247, 247, 247, 0.95);
-		border-radius: 12px;
-		/* Matches the normal nav */
-		width: 50em;
-		max-width: 80%;
-		z-index: 10000;
-	}
-
-	/* Keep your existing styling for elements inside the nav */
-	#nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-
-	#nav ul li {
-		display: inline-block;
-		margin: 0 0.35em;
-	}
-
-	#nav ul li a {
-		display: inline-block;
-		height: 2.25em;
-		line-height: 2.25em;
-		padding: 0 1.25em;
-		border: 0;
-		border-radius: 8px;
-		box-shadow: inset 0 0 0 1px transparent;
-	}
-
-	#nav ul li a:hover {
-		background-color: rgba(222, 222, 222, 0.25);
-	}
-
-	#nav ul li a.active {
-		background-color: #ffffff;
-		box-shadow: none;
-	}
-
-	/* Responsive adjustments */
-	@media screen and (max-width: 736px) {
-		#nav {
-			width: 90%;
-			max-width: none;
-			padding: 0.75em;
+		#nav input, #nav select, #nav textarea {
+			color: #636363;
 		}
+
+		#nav a:hover {
+			color: #636363;
+		}
+
+		#nav strong, #nav b {
+			color: #636363;
+		}
+
+		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
+			color: #636363;
+		}
+
+		#nav blockquote {
+			border-left-color: #dddddd;
+		}
+
+		#nav code {
+			background: rgba(222, 222, 222, 0.25);
+			border-color: #dddddd;
+		}
+
+		#nav hr {
+			border-bottom-color: #dddddd;
+		}
+
+		#nav + #main {
+			padding-top: 4.25em;
+		}
+
+		#nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+			#nav ul li {
+				-moz-transition: margin 0.2s ease;
+				-webkit-transition: margin 0.2s ease;
+				-ms-transition: margin 0.2s ease;
+				transition: margin 0.2s ease;
+				display: inline-block;
+				margin: 0 0.35em;
+				padding: 0;
+				vertical-align: middle;
+			}
+
+				#nav ul li a {
+					-moz-transition: font-size 0.2s ease;
+					-webkit-transition: font-size 0.2s ease;
+					-ms-transition: font-size 0.2s ease;
+					transition: font-size 0.2s ease;
+					display: inline-block;
+					height: 2.25em;
+					line-height: 2.25em;
+					padding: 0 1.25em;
+					border: 0;
+					border-radius: 8px;
+					box-shadow: inset 0 0 0 1px transparent;
+				}
+
+					#nav ul li a:hover {
+						background-color: rgba(222, 222, 222, 0.25);
+					}
+
+					#nav ul li a.active {
+						background-color: #ffffff;
+						box-shadow: none;
+					}
 
 		#nav.alt {
-			width: 90%;
+			position: fixed;
+			top: 0;
+			padding: 0.5em 1em;
+			background-color: rgba(247, 247, 247, 0.95);
+			border-radius: 12px;
+			z-index: 10000;
 		}
-	}
 
+			#nav.alt ul li {
+				margin: 0 0.175em;
+			}
+
+				#nav.alt ul li a {
+					font-size: 0.9em;
+				}
+
+		@media screen and (max-width: 736px) {
+
+			#nav {
+				display: none;
+			}
+
+				#nav + #main {
+					padding-top: 0;
+				}
+
+		}
 
 /* Main */
 
 	#main {
-		background-color: #ffffff;
 		color: #636363;
 		border-radius: 2px;
 	}
