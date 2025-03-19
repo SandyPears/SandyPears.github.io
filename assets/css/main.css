@@ -3432,19 +3432,19 @@ input, select, textarea {
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main a:hover {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main blockquote {
@@ -3471,7 +3471,7 @@ input, select, textarea {
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			color: #ffffff !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3533,7 +3533,7 @@ input, select, textarea {
 				}
 
 		#main label {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main input[type="text"],
@@ -3559,13 +3559,13 @@ input, select, textarea {
 		}
 
 			#main select option {
-				color: #636363;
+				color: #ffffff;
 				background: #ffffff;
 			}
 
 		#main input[type="checkbox"] + label,
 		#main input[type="radio"] + label {
-			color: #636363;
+			color: #ffffff;
 		}
 
 			#main input[type="checkbox"] + label:before,
@@ -3576,8 +3576,8 @@ input, select, textarea {
 
 		#main input[type="checkbox"]:checked + label:before,
 		#main input[type="radio"]:checked + label:before {
-			background-color: #636363;
-			border-color: #636363;
+			background-color: #ffffff;
+			border-color: #ffffff;
 			color: #ffffff;
 		}
 
@@ -3617,7 +3617,7 @@ input, select, textarea {
 
 		#main .icon.alt {
 			border-color: #dddddd;
-			color: #636363;
+			color: #ffffff;
 		}
 
 			#main .icon.alt:hover {
@@ -3633,7 +3633,7 @@ input, select, textarea {
 		}
 
 		#main dl dt {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main header.major h2:after {
@@ -3653,7 +3653,7 @@ input, select, textarea {
 			}
 
 		#main table th {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main table thead {
