@@ -3313,12 +3313,14 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #636363;
 		position: absolute;
-		width: 50em;
+		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
-		border-top-left-radius: 0.25em;
-		border-top-right-radius: 0.25em;
+		border-top-left-radius: 1px;
+		border-bottom-left-radius: 1px;
+		border-top-right-radius: 1px;
+		border-bottom-right-radius: 1px;
 		cursor: default;
 		text-align: center;
 	}
@@ -3431,7 +3433,7 @@ input, select, textarea {
 	#main {
 		background-color: #ffffff;
 		color: #636363;
-		border-radius: 1em;
+		border-radius: 2px;
 	}
 
 		#main input, #main select, #main textarea {
