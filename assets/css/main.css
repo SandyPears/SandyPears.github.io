@@ -388,26 +388,54 @@ input, select, textarea {
 			opacity: 0; /* Start hidden */
 			transition: opacity 3s ease 0.5s; /* 3s fade-in with a 0.5s delay */
 		}
-/* Slideshow*/
-		.slideshow-container {
-			max-width: 1000px;
-			position: relative;
-			margin: auto;
-		}
-
-		.mySlides {
-			display: none;
-		}
-
-		.fade {
-			animation-name: fade;
-			animation-duration: 1.5s;
-		}
-
-		@keyframes fade {
-			from {opacity: .4;}
-			to {opacity: 1;}
-		}
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	overflow: hidden; /* Hides content that overflows */
+	white-space: nowrap; /* Prevents wrapping of slides */
+  }
+  
+  /* Each slide */
+  .mySlides {
+	display: inline-block; /* Stacks slides horizontally */
+	width: 100%;
+	transition: transform 1.5s ease; /* Smooth transition for scrolling */
+  }
+  
+  .mySlides img {
+	width: 100%; /* Ensures images scale correctly */
+  }
+  
+  /* Navigation buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.3s;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  .prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
 /* Row */
 
 	.column{
