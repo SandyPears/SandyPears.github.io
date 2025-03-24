@@ -450,8 +450,9 @@ input, select, textarea {
 	.grid-container > div {
 		border: solid 1px;
 		border-radius: 30px;
-		padding: 25px;
+		padding: 20px;
 		text-align: center;
+		height: 500px;
 	}
 /* Row */
 
