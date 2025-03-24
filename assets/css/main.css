@@ -374,71 +374,83 @@ input, select, textarea {
 
 /* Text Fade-In */
 
-		.tag {
-			opacity: 0;
-			transform: translate(0, 10vh);
-			transition: all 1s;
-		}
-		.tag.visible {
-			opacity: 1;
-			transform: translate(0, 0);
-		}
+	.tag {
+		opacity: 0;
+		transform: translate(0, 10vh);
+		transition: all 1s;
+	}
+	.tag.visible {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
 
-		.tag1 {
-			opacity: 0; /* Start hidden */
-			transition: opacity 3s ease 0.5s; /* 3s fade-in with a 0.5s delay */
-		}
+	.tag1 {
+		opacity: 0; /* Start hidden */
+		transition: opacity 3s ease 0.5s; /* 3s fade-in with a 0.5s delay */
+	}
 /* Slideshow container */
-		.slideshow-container {
-			max-width: 1000px;
-			position: relative;
-			margin: auto;
-			overflow: hidden;
-			white-space: nowrap;
-			border-radius: 1px;
-		}
+	.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+		overflow: hidden;
+		white-space: nowrap;
+		border-radius: 1px;
+	}
 
-		/* Each slide */
-		.mySlides {
-			display: inline-block;
-			width: 100%;
-			transition: transform 1.5s ease;
-		}
+	/* Each slide */
+	.mySlides {
+		display: inline-block;
+		width: 100%;
+		transition: transform 1.5s ease;
+	}
 
-		.mySlides img {
-			width: 100%;
-		}
+	.mySlides img {
+		width: 100%;
+	}
 
-		/* Navigation buttons container */
-		.nav-buttons {
-			text-align: center; /* Centers the buttons */
-			margin-top: 10px; /* Adds spacing between the slideshow and buttons */
-		}
+/* Navigation buttons container */
+	.nav-buttons {
+		text-align: center; /* Centers the buttons */
+		margin-top: 10px; /* Adds spacing between the slideshow and buttons */
+	}
 
-		/* Individual buttons */
-		.prev, .next {
-			cursor: pointer;
-			padding: 16px;
-			margin: 0 10px; /* Space between buttons */
-			color: white;
-			font-weight: bold;
-			font-size: 18px;
-			transition: 0.3s;
-			border-radius: 0 3px 3px 0;
-			user-select: none;
-		}
+/* Individual buttons */
+	.prev, .next {
+		cursor: pointer;
+		padding: 16px;
+		margin: 0 10px; /* Space between buttons */
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.3s;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	}
 
-		.next {
-			border-radius: 3px 0 0 3px;
-		}
+	.next {
+		border-radius: 3px 0 0 3px;
+	}
 
-		.prev {
-			border-radius: 3px 0 0 3px;
-		}
+	.prev {
+		border-radius: 3px 0 0 3px;
+	}
 
-		.prev:hover, .next:hover {
-			background-color: rgba(0, 0, 0, 0.8);
-		}
+	.prev:hover, .next:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+/* Grid */
+	.grid-container{
+		display: grid;
+		grid-template-columns: auto;
+		padding: 10px;
+	}
+	.grid-container > div {
+		border: solid 1px;
+		padding: 10px;
+		text-align: center;
+	}
 /* Row */
 
 	.column{
