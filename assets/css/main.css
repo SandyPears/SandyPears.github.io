@@ -449,6 +449,7 @@ input, select, textarea {
 	}
 	.grid-container > div {
 		border: solid 1px;
+		border-radius: 20px;
 		padding: 10px;
 		text-align: center;
 	}
