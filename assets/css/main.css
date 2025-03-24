@@ -395,25 +395,26 @@ input, select, textarea {
 			margin: auto;
 			overflow: hidden;
 			white-space: nowrap;
+			border-radius: 1px;
 		}
-		
+
 		/* Each slide */
 		.mySlides {
 			display: inline-block;
 			width: 100%;
 			transition: transform 1.5s ease;
 		}
-		
+
 		.mySlides img {
 			width: 100%;
 		}
-		
+
 		/* Navigation buttons container */
 		.nav-buttons {
 			text-align: center; /* Centers the buttons */
 			margin-top: 10px; /* Adds spacing between the slideshow and buttons */
 		}
-		
+
 		/* Individual buttons */
 		.prev, .next {
 			cursor: pointer;
@@ -426,15 +427,15 @@ input, select, textarea {
 			border-radius: 0 3px 3px 0;
 			user-select: none;
 		}
-		
+
 		.next {
 			border-radius: 3px 0 0 3px;
 		}
-		
+
 		.prev {
 			border-radius: 3px 0 0 3px;
 		}
-		
+
 		.prev:hover, .next:hover {
 			background-color: rgba(0, 0, 0, 0.8);
 		}
