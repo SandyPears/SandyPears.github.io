@@ -460,6 +460,8 @@ input, select, textarea {
 		padding: 5px;
 	}
 	.alt-grid-container > div {
+		border: solid 1px;
+		border-radius: 30px;
 		padding: 5px;
 		text-align: center;
 	}
