@@ -456,11 +456,11 @@ input, select, textarea {
 	.alt-grid-container{
 		display: grid;
 		grid-template-columns: auto auto auto auto;
-		gap: 5px;
+		gap: 1px;
 		padding: 5px;
 	}
 	.alt-grid-container > div {
-		border: solid 1px;
+		border: 1px;
 		border-radius: 30px;
 		width: 250px;
 		padding: 5px;
