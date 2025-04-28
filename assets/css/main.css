@@ -462,7 +462,7 @@ input, select, textarea {
 	.alt-grid-container > div {
 		border: solid 1px;
 		border-radius: 30px;
-		width: 200px;
+		width: 220px;
 		padding: 5px;
 		text-align: center;
 	}
