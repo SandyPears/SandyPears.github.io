@@ -443,13 +443,23 @@ input, select, textarea {
 /* Grid */
 	.grid-container{
 		display: grid;
-		grid-template-columns: auto auto auto auto;
+		grid-template-columns: auto auto auto;
 		gap: 10px;
-		padding: 5px;
+		padding: 10px;
 	}
 	.grid-container > div {
 		border: solid 1px;
 		border-radius: 30px;
+		padding: 20px;
+		text-align: center;
+	}
+	.alt-grid-container{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		gap: 10px;
+		padding: 5px;
+	}
+	.alt-grid-container > div {
 		padding: 5px;
 		text-align: center;
 	}
