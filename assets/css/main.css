@@ -394,50 +394,48 @@ input, select, textarea {
 	overflow: hidden;
 	margin: auto;
 	position: relative;
-  }
-  
-  .slides-wrapper {
-	display: flex;
-	transition: transform 1.5s ease;
-  }
-  
-  .mySlide {
-	flex: 0 0 100%;
-	max-width: 100%;
-  }
-  
-  .mySlide img {
+	border-radius: 12px;
+}
+
+.mySlide img {
 	width: 100%;
 	display: block;
-  }
-  
-  /* Nav buttons */
-  .nav-buttons {
-	text-align: center;
-	margin-top: 10px;
-  }
-  
-  .prev, .next {
-	cursor: pointer;
-	padding: 16px;
-	margin: 0 10px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.3s;
-	border-radius: 3px;
-	user-select: none;
+	border-radius: 12px;
+}
+
+.nav-buttons {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+	pointer-events: none;
+}
+
+.prev,
+.next {
+	pointer-events: auto;
 	background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .prev:hover, .next:hover {
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 12px 16px;
+	border-radius: 50%;
+	user-select: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.prev:hover,
+.next:hover {
 	background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .prev:focus, .next:focus {
+}
+.prev:focus,
+.next:focus {
 	outline: none;
-  }
-  
+}
 /* Grid */
 	.grid-container{
 		display: grid;
