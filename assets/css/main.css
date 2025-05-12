@@ -399,11 +399,11 @@ input, select, textarea {
   .slides-wrapper {
 	display: flex;
 	transition: transform 1.5s ease;
-	width: 100%;
   }
   
   .mySlide {
 	flex: 0 0 100%;
+	max-width: 100%;
   }
   
   .mySlide img {
@@ -437,6 +437,7 @@ input, select, textarea {
   .prev:focus, .next:focus {
 	outline: none;
   }
+  
 /* Grid */
 	.grid-container{
 		display: grid;
