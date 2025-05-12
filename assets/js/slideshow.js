@@ -1,26 +1,26 @@
 let slideIndex = 0;
 
 function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
-  let slideWidth = slides[0].clientWidth; // Get the width of a slide
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.transform = `translateX(-${slideIndex * slideWidth}px)`; // Scroll effect
-  }
-  slideIndex++;
-  if (slideIndex >= slides.length) { slideIndex = 0; }
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  const wrapper = document.querySelector(".slide-wrapper");
+  const slideWidth = wrapper.clientWidth;
+  const totalSlides = document.querySelectorAll(".mySlides").length;
+
+  wrapper.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+  slideIndex = (slideIndex + 1) % totalSlides;
+
+  setTimeout(showSlides, 5000);
 }
 
-// Manual navigation functions
 function plusSlides(n) {
-  let slides = document.getElementsByClassName("mySlides");
-  let slideWidth = slides[0].clientWidth; // Get the width of a slide
+  const wrapper = document.querySelector(".slide-wrapper");
+  const slideWidth = wrapper.clientWidth;
+  const totalSlides = document.querySelectorAll(".mySlides").length;
+
   slideIndex += n;
-  if (slideIndex >= slides.length) { slideIndex = 0; }
-  if (slideIndex < 0) { slideIndex = slides.length - 1; }
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.transform = `translateX(-${slideIndex * slideWidth}px)`; // Scroll effect
-  }
+  if (slideIndex >= totalSlides) slideIndex = 0;
+  if (slideIndex < 0) slideIndex = totalSlides - 1;
+
+  wrapper.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
 }
 
 window.onload = showSlides;
