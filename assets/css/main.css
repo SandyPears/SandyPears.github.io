@@ -393,7 +393,6 @@ input, select, textarea {
 		border-radius: 10px;
 		overflow: hidden;
 		position: relative;
-		max-width: 100%;
 	}
 
 	.slides-wrapper {
