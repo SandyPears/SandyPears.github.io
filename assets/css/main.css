@@ -389,21 +389,24 @@ input, select, textarea {
 		transition: opacity 3s ease 0.5s; /* 3s fade-in with a 0.5s delay */
 	}
 /* Slideshow container */
-.slideshow-container {
-	border-radius: 10px;
-	overflow: hidden;
+	* {
+		box-sizing: border-box
 	}
-
-	.mySlide img {
-		width: 100%;
-		display: block;
-		border-radius: 10px;
-		flex: 0 0 100%;
-		max-width: 100%;
+	.image-slideshow {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
 	}
-	.slides-wrapper {
-		display: flex;
-		transition: transform 1.5s ease;
+	img {
+		width: 100%
+	}
+	.fade {
+		animation-name: fade;
+		animation-duration: 2s;
+	}
+	@keyframes fade {
+		from {opacity: .5}
+		to {opacity: 1}
 	}
 /* Grid */
 	.grid-container{
