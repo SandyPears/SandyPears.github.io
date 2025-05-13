@@ -21,6 +21,6 @@ function plusSlides(n) {
 window.onload = () => {
   const wrapper = document.querySelector(".slides-wrapper");
   const slides = document.querySelectorAll(".mySlide");
-  wrapper.style.width = `${slides.length * 100}%`; // ← Important!
-  showSlides();
+  wrapper.style.width = `${slides.length * 100}%`;
+  setTimeout(showSlides, 100);
 };
