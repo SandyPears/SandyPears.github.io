@@ -7,9 +7,9 @@ function updateSlidePosition() {
 
 function showSlides() {
   const totalSlides = document.querySelectorAll(".mySlide").length;
-  updateSlidePosition();
   slideIndex = (slideIndex + 1) % totalSlides;
-  setTimeout(showSlides, 1000);
+  updateSlidePosition();
+  setTimeout(showSlides, 4000);
 }
 
 function plusSlides(n) {
@@ -22,5 +22,6 @@ window.onload = () => {
   const wrapper = document.querySelector(".slides-wrapper");
   const slides = document.querySelectorAll(".mySlide");
   wrapper.style.width = `${slides.length * 100}%`;
+  updateSlidePosition();
   showSlides();
 };
