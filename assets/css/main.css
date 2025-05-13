@@ -399,6 +399,7 @@ input, select, textarea {
 	.slides-wrapper {
 		display: flex;
 		transition: transform 1.5s ease;
+		width: 100% !important;
 	}
 
 	.mySlide {
