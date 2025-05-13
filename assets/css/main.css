@@ -390,7 +390,6 @@ input, select, textarea {
 	}
 /* Slideshow container */
 	.slideshow-container {
-		/*width: 800px;*/
 		overflow: hidden;
 		margin: auto;
 		position: relative;
@@ -410,6 +409,9 @@ input, select, textarea {
 	.mySlide img {
 		width: 100%;
 		display: block;
+		border-radius: 10px;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 
 	/* Nav buttons */
