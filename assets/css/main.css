@@ -390,10 +390,11 @@ input, select, textarea {
 	}
 /* Slideshow container */
 	.slideshow-container {
-		width: 800px;
+		/*width: 800px;*/
 		overflow: hidden;
 		margin: auto;
 		position: relative;
+		border-radius: 10px;
 	}
 
 	.slides-wrapper {
