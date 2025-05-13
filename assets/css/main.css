@@ -411,6 +411,7 @@ input, select, textarea {
 		border-radius: 10px;
 		flex: 0 0 100%;
 		max-width: 100%;
+		object-fit: contain;
 	}
 
 	/* Nav buttons */
