@@ -392,6 +392,7 @@ input, select, textarea {
 	.slideshow-container {
 		border-radius: 10px;
 		overflow: hidden;
+		position: relative;
 	}
 
 	.slides-wrapper {
