@@ -391,8 +391,8 @@ input, select, textarea {
 /* Slideshow container */
 	.slideshow-container {
 		overflow: hidden;
-		margin: auto;
-		position: relative;
+		/*margin: auto;
+		position: relative;*/
 		border-radius: 10px;
 	}
 
