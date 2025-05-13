@@ -9,7 +9,7 @@ function showSlides() {
   const totalSlides = document.querySelectorAll(".mySlide").length;
   updateSlidePosition();
   slideIndex = (slideIndex + 1) % totalSlides;
-  setTimeout(showSlides, 5000);
+  setTimeout(showSlides, 10000);
 }
 
 function plusSlides(n) {
