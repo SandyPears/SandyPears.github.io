@@ -9,7 +9,7 @@ function initSlideshows() {
     wrapper.style.width = `${slides.length * 100}%`;
 
     function updateSlidePosition() {
-      wrapper.style.transform = `translateX(-${slideIndex * (100 / slides.length)}%)`;
+      wrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
     }
 
     function showSlides() {
