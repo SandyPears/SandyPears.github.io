@@ -6,11 +6,20 @@ function updateSlidePosition() {
   wrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
 
-function showSlides() {
-  const totalSlides = document.querySelectorAll(".mySlide").length;
-  updateSlidePosition();
-  slideIndex = (slideIndex + 1) % totalSlides;
-  setTimeout(showSlides, 5000);
+function setSlides() {
+  const slideshows = document.querySelectorAll(".slideshow-container");
+
+  slideshows.forEach(container => {
+    const slides = container.querySelectorAll(".mySlide");
+    let slideIndex = 0;
+
+    function showSlides() {
+      updateSlidePosition();
+      slideIndex = (slideIndex + 1) % totalSlides;
+      setTimeout(showSlides, 5000);
+    }
+    showSlides();
+  });
 }
 
 function plusSlides(n) {
