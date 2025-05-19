@@ -1,26 +1,29 @@
-let slideIndex = 0;
-
-function updateSlidePosition() {
-  const wrapper = document.querySelector(".slides-wrapper");
-
-  wrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
-}
-
-function setSlides() {
+function initSlideshows() {
   const slideshows = document.querySelectorAll(".slideshow-container");
 
   slideshows.forEach(container => {
+    const wrapper = container.querySelector(".slides-wrapper");
     const slides = container.querySelectorAll(".mySlide");
     let slideIndex = 0;
 
+    wrapper.style.width = `${slides.length * 100}%`;
+
+    function updateSlidePosition() {
+      wrapper.style.transform = `translateX(-${slideIndex * (100 / slides.length)}%)`;
+    }
+
     function showSlides() {
+      slideIndex = (slideIndex + 1) % slides.length;
       updateSlidePosition();
-      slideIndex = (slideIndex + 1) % totalSlides;
       setTimeout(showSlides, 5000);
     }
-    showSlides();
+
+    updateSlidePosition();
+    setTimeout(showSlides, 5000);
   });
 }
+
+window.onload = initSlideshows;
 
 function plusSlides(n) {
 
@@ -28,10 +31,3 @@ function plusSlides(n) {
   slideIndex = (slideIndex + n + totalSlides) % totalSlides;
   updateSlidePosition();
 }
-
-window.onload = () => {
-  const wrapper = document.querySelector(".slides-wrapper");
-  const slides = document.querySelectorAll(".mySlide");
-  wrapper.style.width = `${slides.length * 100}%`;
-  showSlides();
-};
