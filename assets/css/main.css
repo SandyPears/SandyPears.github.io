@@ -113,6 +113,29 @@ input, select, textarea {
 			background: #8cc9f0 !important;
 		}
 }
+.item2 {
+	justify-content: center;
+	width: 100%;
+	background-color: lightgray;
+	margin-right: 2px;
+	height: 15px;
+
+		&.step1 {
+			background: #efa8b0 !important;
+		}
+		&.step2 {
+			background: #c79cc8 !important;
+		}
+		&.step3 {
+			background: #a89cc8 !important;
+		}
+		&.step4 {
+			background: #9bb2e1 !important;
+		}
+		&.step5 {
+			background: #8cc9f0 !important;
+		}
+}
 /* Basic */
 
 	@-ms-viewport {
