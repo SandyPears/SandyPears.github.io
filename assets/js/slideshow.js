@@ -18,6 +18,11 @@ function initSlideshows() {
       setTimeout(showSlides, 5000);
     }
 
+    function plusSlides(n) {
+      slideIndex = (slideIndex + n + slides.length) % slides.length;
+      updateSlidePosition();
+    }
+
     updateSlidePosition();
     setTimeout(showSlides, 5000);
   });
@@ -25,9 +30,3 @@ function initSlideshows() {
 
 window.onload = initSlideshows;
 
-function plusSlides(n) {
-
-  const totalSlides = document.querySelectorAll(".mySlide").length;
-  slideIndex = (slideIndex + n + totalSlides) % totalSlides;
-  updateSlidePosition();
-}
