@@ -23,6 +23,13 @@ function initSlideshows() {
       updateSlidePosition();
     }
 
+    container.querySelectorAll(".prev, .next").forEach(button => {
+      button.addEventListener("click", (e) => {
+        const increment = e.target.classList.contains("next") ? 1 : -1;
+        plusSlides(increment);
+      });
+    });
+
     updateSlidePosition();
     setTimeout(showSlides, 5000);
   });
