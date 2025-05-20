@@ -501,8 +501,9 @@ input, select, textarea {
 	}
 
 	.grid-box{
+		border: 1px;
 		border-radius: 10px;
-		background-color:#dddddd;
+		border-color:#dddddd;
 		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 	}
 /* Row */
