@@ -476,7 +476,7 @@ input, select, textarea {
 /* Grid */
 	.grid-container{
 		display: grid;
-		grid-template-columns: auto auto auto auto auto;
+		grid-template-columns: auto auto auto auto auto auto;
 		gap: 15px;
 		padding: 10px;
 	}
