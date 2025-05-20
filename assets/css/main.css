@@ -499,6 +499,12 @@ input, select, textarea {
 		padding: 5px;
 		text-align: center;
 	}
+
+	.grid-box{
+		border-radius: 10px;
+		background-color:#dddddd;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
 /* Row */
 
 	.column{
