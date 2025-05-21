@@ -538,8 +538,8 @@ input, select, textarea {
 	}
 
 	.grid-box{
-		max-width: 170px;
-		min-width: 170px;
+		max-width: 165px;
+		min-width: 165px;
 		background-color: rgba(255, 255, 255, 0.1);
 		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 	}
