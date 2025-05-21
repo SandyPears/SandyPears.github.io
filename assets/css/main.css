@@ -483,7 +483,10 @@ input, select, textarea {
 	}
 	.grid-container-six > div {
 		border-radius: 20px;
-		padding: 20px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
 		text-align: center;
 	}
 	.grid-container-five{
@@ -514,7 +517,10 @@ input, select, textarea {
 	}
 	.grid-container-two > div {
 		border-radius: 20px;
-		padding: 20px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
 		text-align: center;
 	}
 	.alt-grid-container{
