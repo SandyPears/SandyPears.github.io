@@ -6,7 +6,7 @@ function initSlideshows() {
     const slides = container.querySelectorAll(".mySlide");
     let slideIndex = 0;
 
-    wrapper.style.width = `${slides.length * 100}%`;
+    wrapper.style.width = `$ {slides.length * 100}%`;
 
     function updateSlidePosition() {
       wrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
